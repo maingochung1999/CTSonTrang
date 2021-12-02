@@ -1,0 +1,68 @@
+{
+    "menus": [{
+            "_id": 1,
+            "name": "Giới thiệu",
+            "link": "page__introduce.html",
+            "status": "introduce",
+            "childrens": null
+        },
+        {
+            "_id": 2,
+            "name": "bất động sản",
+            "link": "page__buy-online.html",
+            "status": "buy-online",
+            "childrens": [{
+                "_id": "1",
+                "name": "bất động sản",
+                "link": "#"
+            }, {
+                "_id": "2",
+                "name": "bất động sản",
+                "link": "#"
+            }, {
+                "_id": "3",
+                "name": "bất động sản",
+                "link": "#"
+            }]
+        },
+        {
+            "_id": 3,
+            "name": "xây dựng",
+            "link": "page__support.html",
+            "status": "support"
+        },
+        {
+            "_id": 4,
+            "name": "khách sạn",
+            "link": "",
+            "status": "news",
+            "childrens": null
+        },
+        {
+            "_id": 5,
+            "name": "tin tức",
+            "link": "page__news.html",
+            "status": "news",
+            "childrens": [{
+                "_id": "1",
+                "name": "tin tức",
+                "link": "#"
+            }, {
+                "_id": "2",
+                "name": "tin tức",
+                "link": "#"
+            }, {
+                "_id": "3",
+                "name": "tin tức",
+                "link": "#"
+            }]
+        },
+        {
+            "_id": 6,
+            "name": "liên hệ",
+            "link": "page__contact.html",
+            "status": "contact",
+            "childrens": null
+        }
+    ]
+}

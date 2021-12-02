@@ -1,0 +1,94 @@
+@media (min-width: 230px) {
+    #addon__society {
+        .addon__item {
+            position: fixed;
+            z-index: 99;
+            &.left {
+                bottom: 15px;
+                left: 15px;
+                .addon__icon {
+                    width: 60px;
+                    height: 60px;
+                    background-color: #C5000C;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    box-shadow: 0px 4px 8px rgba(197, 0, 12, 0.2);
+                    animation: boxShadow 1.5s ease-in-out infinite;
+                    img {
+                        width: 27px;
+                        height: 27px;
+                        animation: phonering-alo-circle 1s ease-in-out infinite;
+                    }
+                }
+            }
+            &.right {
+                bottom: 25px;
+                right: 15px;
+                .addon__icon {
+                    width: 51px;
+                    height: 51px;
+                    border-radius: 50%;
+                    background-color: #2457D0;
+                    box-shadow: 0px 4px 8px rgba(197, 0, 12, 0.2);
+                    margin-top: 1.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #addon__society {
+        .addon__item {
+            &.left {
+                bottom: 50px;
+                left: 50px;
+            }
+            &.right {
+                bottom: 50px;
+                right: 50px;
+            }
+        }
+    }
+}
+
+@keyframes boxShadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(197, 0, 13, 0.3), 0 0 0 0 #fff;
+    }
+    75% {
+        box-shadow: 0 0 0 6px rgba(197, 0, 13, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 0 0px rgba(197, 0, 13, 0.3);
+    }
+}
+
+@keyframes phonering-alo-circle {
+    0% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    10% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+}

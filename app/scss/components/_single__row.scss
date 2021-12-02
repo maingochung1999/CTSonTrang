@@ -1,0 +1,136 @@
+@import "../../tools/variable.scss";
+@import "../../tools/mixin.scss";
+
+.info__cart {
+    position: relative;
+    z-index: 2;
+    .single__row {
+        padding-left: 10rem;
+        .single__title {
+            font-size: 1.7rem;
+            color: #000000;
+            font-weight: 500;
+            margin-bottom: 3.9rem;
+        }
+        .single__code {
+            font-size: 15px;
+            color: #000000;
+            margin-top: 0.4rem;
+        }
+        .cart__product {
+            display: flex;
+
+            text-decoration: none;
+            .cart__product-avata {
+                width: 100%;
+                max-width: 80px;
+                .frame {
+                    &:before {
+                        background-color: #fff;
+                        padding-top: 125%;
+                    }
+                    img {
+                        top: unset;
+                        max-width: 100%;
+                        width: 30%;
+                        margin: auto;
+                        height: auto;
+                        object-fit: contain;
+                        bottom: 1.3rem;
+                    }
+                }
+            }
+            .cart__product-content {
+                padding-left: 2.3rem;
+                max-width: calc(100% - 80px);
+                width: 100%;
+                .cart__product--title {
+                    font-size: 1.7rem;
+                    color: #000000;
+                    font-weight: 400;
+                }
+                .cart__size,
+                .cart__total {
+                    font-size: 1.6rem;
+                    color: $grey;
+                    font-weight: 300;
+                    margin-top: 1rem;
+                }
+            }
+        }
+        td {
+            border-top: 0;
+            border-bottom: 1px solid $colorBorder;
+            padding: 1.9rem;
+            font-size: 1.6rem;
+            font-weight: 300;
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                vertical-align: middle;
+                padding-right: 0;
+                text-align: right;
+            }
+        }
+        tr {
+            &:last-child {
+                tr {
+                    td {
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+            .total__goup {
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+                border: 1px solid $colorBorder;
+                height: 5rem;
+                padding-right: 0.7rem;
+                input {
+                    height: 5rem;
+                    border: 0;
+                    width: calc(100% - 8rem);
+                    outline: none;
+                    padding: 0 1.5rem;
+                }
+                .btn__total {
+                    color: #fff;
+                    width: 80px;
+                    background: #000;
+                    height: 3.5rem;
+                }
+            }
+            .point {
+                color: #000000;
+                font-weight: 300;
+                font-style: italic;
+                text-align: left;
+                margin-top: 1.3rem;
+            }
+            .point__info {
+                text-align: left;
+                font-size: 1.4rem;
+                color: #8c8c8c;
+                font-weight: 300;
+                font-style: italic;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+@media (max-width: 1199.98px) {
+    .info__cart {
+        .single__row {
+            padding-left: 1.5rem;
+            .table__res {
+                width: 100%;
+                overflow-x: auto;
+                .table {
+                    width: 500px;
+                }
+            }
+        }
+    }
+}

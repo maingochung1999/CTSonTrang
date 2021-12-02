@@ -1,0 +1,77 @@
+@media (min-width: 230px) {
+    .addon__search {
+        margin-left: auto;
+        cursor: pointer;
+        margin-right: 5px;
+        .main__search {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.231);
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s all;
+            &.active {
+                opacity: 1;
+                visibility: visible;
+                transition: 0.3s all;
+                .form__search {
+                    transition: 0.3s all;
+                    transform: translateY(0);
+                }
+            }
+            .form__search {
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+                justify-content: center;
+                background-color: #fff;
+                width: 100%;
+                height: 50px;
+                padding: 0.5rem;
+                transform: translateY(-100%);
+                transition: 0.3s all;
+                .input__search {
+                    width: 200px;
+                    height: 4rem;
+                    padding-left: 10px;
+                    border: 1px solid #ddd;
+                    border-top-left-radius: 0.5rem;
+                    border-bottom-left-radius: 0.5rem;
+                    border-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .addon__search {
+        margin-left: 50px;
+        .main__search {
+            .form__search {
+                padding: 1.5rem;
+                .input__search {}
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .addon__search {
+        margin-left: 95px;
+        .main__search {
+            .form__search {
+                .input__search {}
+            }
+        }
+    }
+}

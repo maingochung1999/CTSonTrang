@@ -1,0 +1,176 @@
+@media (min-width: 230px) {
+  .page__login {
+    margin: 30px 0; }
+    .page__login .page__login-group {
+      max-width: 368px;
+      margin: 0 auto;
+      background-color: #fff;
+      -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.06);
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.06);
+      border-radius: 8px;
+      padding: 24px; }
+      .page__login .page__login-group h1 {
+        font-family: "Roboto-Medium", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #333333;
+        margin-bottom: 10px; }
+      .page__login .page__login-group > span {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #808080;
+        display: block;
+        margin-bottom: 34px; }
+      .page__login .page__login-group form .input-box {
+        margin-bottom: 21px; }
+        .page__login .page__login-group form .input-box .input-label {
+          font-size: 14px;
+          line-height: 16px;
+          color: #666;
+          display: block;
+          margin-bottom: 9px; }
+          .page__login .page__login-group form .input-box .input-label strong {
+            color: #E91F27; }
+        .page__login .page__login-group form .input-box .input__control {
+          background-color: #F9F9F9;
+          border: 1px solid #E5E5E5;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          border-radius: 8px;
+          height: 44px; }
+          .page__login .page__login-group form .input-box .input__control:focus {
+            border: 1px solid #156EAA; }
+      .page__login .page__login-group form .btn__send {
+        border-radius: 8px;
+        height: 44px;
+        margin-bottom: 16px;
+        margin-top: 32px; }
+      .page__login .page__login-group form .link-group {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 24px; }
+        .page__login .page__login-group form .link-group a {
+          font-size: 13px;
+          line-height: 24px;
+          color: #156EAA;
+          display: block;
+          width: -webkit-max-content;
+          width: -moz-max-content;
+          width: max-content; }
+      .page__login .page__login-group .footer-form span {
+        font-size: 14px;
+        line-height: 24px;
+        color: #808080;
+        text-align: center;
+        max-width: -webkit-max-content;
+        max-width: -moz-max-content;
+        max-width: max-content;
+        display: block;
+        margin: 0 auto;
+        padding: 0 11px;
+        position: relative;
+        margin-bottom: 26px; }
+        .page__login .page__login-group .footer-form span::before, .page__login .page__login-group .footer-form span::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 100%;
+          width: 80px;
+          height: 1px;
+          background-color: #e5e5e5; }
+        .page__login .page__login-group .footer-form span::after {
+          left: 100%; }
+      .page__login .page__login-group .footer-form .btn {
+        border-radius: 8px;
+        height: 44px;
+        font-family: "Roboto-Medium", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+        width: 100%;
+        position: relative;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s; }
+        .page__login .page__login-group .footer-form .btn::before {
+          content: '';
+          position: absolute;
+          left: 24px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+          background-repeat: no-repeat;
+          background-size: unset;
+          background-position: center left;
+          width: 38px;
+          height: 38px;
+          display: block;
+          border: 1px solid transparent;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          -webkit-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s; }
+        .page__login .page__login-group .footer-form .btn__face {
+          background-color: #1877F2;
+          margin-bottom: 12px; }
+          .page__login .page__login-group .footer-form .btn__face::before {
+            background-image: url("../../images/icons/icon__face.svg"); }
+          .page__login .page__login-group .footer-form .btn__face:hover {
+            background-color: transparent;
+            color: #1877F2;
+            border: 1px solid #1877F2; }
+            .page__login .page__login-group .footer-form .btn__face:hover::before {
+              -webkit-filter: unset;
+              filter: unset; }
+        .page__login .page__login-group .footer-form .btn__google {
+          background-color: #E64943; }
+          .page__login .page__login-group .footer-form .btn__google::before {
+            background-image: url("../../images/icons/icon__google.svg"); }
+          .page__login .page__login-group .footer-form .btn__google:hover {
+            background-color: transparent;
+            color: #E64943;
+            border: 1px solid #E64943; }
+            .page__login .page__login-group .footer-form .btn__google:hover::before {
+              -webkit-filter: unset;
+              filter: unset; }
+    .page__login.register .page__login-group h1 {
+      margin-bottom: 34px; }
+    .page__login.register .page__login-group .btn__send {
+      margin-bottom: 32px; } }
+
+@media (min-width: 992px) {
+  .page__login {
+    margin: 50px 0; } }
+
+@media (min-width: 1200px) {
+  .page__login {
+    margin-bottom: 80px; } }

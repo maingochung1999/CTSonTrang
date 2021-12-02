@@ -1,0 +1,35 @@
+@media (min-width: 230px) {
+    .addon__banner {
+        .banner__item {
+            display: block !important;
+        }
+        &.slick-dotted.slick-slider {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .addon__banner {
+        .banner__item {
+            position: relative;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .addon__banner {
+        .banner__item {
+            position: relative;
+            .frame {
+                padding-top: 45.487%;
+                img {
+                    object-fit: cover;
+                    object-position: bottom center;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {}

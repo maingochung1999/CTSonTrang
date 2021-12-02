@@ -1,0 +1,90 @@
+@media (min-width: 230px) {
+    .banner-global {
+        padding: 1.3rem 0 0;
+        border-top: 1px solid $colorBorder;
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            li {
+                &:not(:first-child) {
+                    margin-left: 2rem;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        width: 0.2rem;
+                        height: 0.2rem;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: -1.1rem;
+                        background-color: #808080;
+                    }
+                }
+                a {
+                    font-size: 1.2rem;
+                    line-height: 2.4rem;
+                    color: #595959;
+                }
+                &:last-child {
+                    a {
+                        max-width: 9.1rem;
+                        width: 100%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        line-height: 2.4rem;
+                        -webkit-line-clamp: 1;
+                        max-height: calc(2.4rem * 1);
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+        }
+        .title__global {
+            text-align: center;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+    }
+}
+@media (min-width: 400px) {
+    .banner-global {
+        .breadcrumb {
+            li {
+                &:last-child {
+                    a {
+                        max-width: 17.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 480px) {
+    .banner-global {
+        .breadcrumb {
+            li {
+                &:last-child {
+                    a {
+                        max-width: 25.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px) {
+    .banner-global {
+        .breadcrumb {
+            li {
+                &:last-child {
+                    a {
+                        max-width: 30rem;
+                    }
+                }
+            }
+        }
+    }
+}

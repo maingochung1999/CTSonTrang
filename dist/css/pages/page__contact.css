@@ -1,0 +1,84 @@
+@media (min-width: 230px) {
+  .page__contact .module__page-contact {
+    background-color: #fff; }
+    .page__contact .module__page-contact .page__contact-content {
+      padding: 15px; }
+      .page__contact .module__page-contact .page__contact-content ul {
+        padding-left: 20px;
+        margin-bottom: 16px; }
+        .page__contact .module__page-contact .page__contact-content ul:last-child {
+          margin-bottom: 2px; }
+        .page__contact .module__page-contact .page__contact-content ul li {
+          font-size: 14px;
+          line-height: 24px;
+          color: #2D3436 b;
+            color-font-family: "Roboto-Bold", sans-serif; }
+    .page__contact .module__page-contact span {
+      font-size: 14px;
+      line-height: 24px;
+      color: #646B72;
+      display: block;
+      margin-top: 24px;
+      padding-left: 15px; }
+    .page__contact .module__page-contact form {
+      padding: 30px 15px;
+      max-width: 560px;
+      margin: 0 auto; }
+      .page__contact .module__page-contact form .input-group .input-box {
+        margin-bottom: 20px; }
+        .page__contact .module__page-contact form .input-group .input-box .input__control {
+          padding: 7px 8px; }
+        .page__contact .module__page-contact form .input-group .input-box textarea {
+          height: 125px; }
+      .page__contact .module__page-contact form .btn__send {
+        font-family: "Roboto-Bold", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 10px 0;
+        border-radius: 4px;
+        max-width: 100%;
+        margin: 0 auto; }
+  .map__contact {
+    margin: 30px 0; }
+    .map__contact .map__contact-group {
+      background-color: #fff; }
+      .map__contact .map__contact-group iframe {
+        padding: 15px;
+        max-width: 100%;
+        width: 100%;
+        height: 300px; } }
+
+@media (min-width: 576px) {
+  .page__contact .module__page-contact form .input-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px; }
+    .page__contact .module__page-contact form .input-group .input-box .input__control {
+      padding: 14px 16px; }
+    .page__contact .module__page-contact form .input-group .input-box:last-child {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 2;
+      grid-column: 1/ span 2; }
+  .page__contact .module__page-contact form .btn__send {
+    max-width: 230px;
+    padding: 18px 0; } }
+
+@media (min-width: 992px) {
+  .page__contact .module__page-contact .page__contact-content {
+    padding: 24px; }
+  .page__contact .module__page-contact span {
+    padding-left: 24px; }
+  .page__contact .module__page-contact form {
+    padding: 50px 0; }
+  .map__contact {
+    margin-bottom: 50px; }
+    .map__contact .map__contact-group iframe {
+      height: 600px;
+      padding: 24px; } }
+
+@media (min-width: 1200px) {
+  .map__contact {
+    margin-bottom: 70px; } }

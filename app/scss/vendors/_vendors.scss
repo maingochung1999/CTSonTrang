@@ -1,0 +1,21 @@
+/**
+* @import bootstrap
+*/
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/tables";
+
+/**
+*@slick
+*/
+
+@import "node_modules/slick-slider/slick/slick.scss";
+@import "node_modules/slick-slider/slick/slick-theme.scss";
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+// @import "./icons";
+// @import "fontawesome/fontawesome.scss";
+// @import "fontawesome/brands.scss";
+// @import "fontawesome/solid.scss";
+// @import "fontawesome/regular.scss";

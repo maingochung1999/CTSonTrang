@@ -1,0 +1,26 @@
+<div class="addon__menu">
+    <div class="box__menu">
+        <ul class="menu">
+            <li class="menu__list ">
+                <a href="index.html" class="menu__link " title="Trang chủ">
+                    <img src="images/icons/icon__home.svg" alt="icon__home.svg">
+                </a>
+            </li>
+            {% for item in menus %}
+            <li class="menu__list {{ item.status == pages ? 'active' : '' }} ">
+                <a href="{{item.link}}" class="menu__link " title="{{item.name}}">{{item.name}}</a>
+                 {% if item.childrens %}
+                <ul>
+                    {% for value in item.childrens %}
+                    <li>
+                        <a href="{{value.link}}" title="{{value.name}}">{{value.name}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

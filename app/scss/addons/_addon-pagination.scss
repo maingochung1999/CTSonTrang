@@ -1,0 +1,52 @@
+.addon__pagination {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    width: 100%;
+    margin-top: 20px;
+    .addon__pagination-item {
+        margin: 0 0.3rem;
+        .addon__pagination-item-link {
+            text-decoration: none;
+            display: inline-flex;
+            width: 3.8rem;
+            height: 3.8rem;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            font-size: 14px;
+            line-height: 18px;
+            color: $textSub;
+            border: 1px solid #D8D8D9;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        &:hover,
+        &.active {
+            .addon__pagination-item-link {
+                background-color: $primary;
+                color: #fff;
+                transition: all 0.3s;
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .addon__pagination {
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .addon__pagination {
+        margin-top: 0;
+    }
+}
